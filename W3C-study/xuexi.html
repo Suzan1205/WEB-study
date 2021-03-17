@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+
+<!--- <body background-color="green">  -->
+<!-- 还可以定义style，如我们将上面直接改变背景的<body background-color="green">换成下面的形式，这样背景效果更好一点。将上述的注释掉-->
+<body style="background-color:PowderBlue;">
+
+<h1 style="text-align:center">HTML编辑器学习</h1>
+<p>第一轮学习</p>
+<p> 右键选择记事本打开，则为源代码打开；若直接点击打开，则为网页打开，不能编辑代码</p>
+<p style="font-family:verdana;color:red">
+用记事本编辑后另保存为：文件名写为：“xuexi.html”</p>
+
+<!-- 上述是设置该段字体颜色，如果将style后面去掉，则默认黑色 -->
+
+<p>点击右键可以查看源代码，选择“查看源文件”（IE）或“查看页面源代码”（Firefox），其他浏览器的做法也是类似的。
+这么做会打开一个包含页面 HTML 代码的窗口</p>
+
+<hr />
+<!-- <hr />标签可在页面中创建水平线，可用于分割内容(该部分为注释) -->
+
+<p style="font-family:arial;color:green;font-size:20px;">上述主体中添加了标签，将背景改成了绿色；也可删去背景即原色白色</p>
+
+<!-- 上面的style用于设置字体系列、颜色、大小，如不需要删掉则正常显示 -->
+
+<p>上述标题中添加了标签，将标题居中；也可删去此标签则标题靠左显示</p>
+
+<hr />
+
+<a href="http://www.w3school.com.cn">
+This a link.这是学习的网址链接</a>
+<!-- 链接由<a>标签定义。链接地址在href属性中指定。该链接是带有下划线的 ，也可以制作不带下划线的链接-->
+
+<hr />
+<a href ="https://www.w3school.com.cn/tiy/t.asp?f=html_link_target", style="text-decoration:none"  target="_blank">这是W3C的学习链接！而且如果把链接的 target 属性设置为 "_blank"，该链接会在新窗口中打开。</a>
+
+<hr />
+<p>您也可以使用图像作为超链接：
+<a href="https://www.w3school.com.cn/html/html_links.asp">
+<img border="0" src="/张d(G:)/ZXYY_1.jpg">
+</a>
+</p>
+<!--使用图像作为超链接-->
+
+<hr />
+<address>
+Written by SuHuan Zhang.<br>
+2020.5.23<br>
+HTMLxuexi
+</address>
+
+<hr />
+<p>下面学习表格：</p>
+
+<h4>带有普通边框的表格：</h4>
+<table border="1">
+<tr>
+      <td>春</td>
+      <td>眠</td>
+      <td>不</td>
+      <td>觉</td>
+      <td>晓</td>
+</tr>
+<tr>
+      <td>处</td>
+      <td>处</td>
+      <td>蚊</td>
+      <td>子</td>
+      <td>咬</td>
+</tr>
+</table>
+<hr />
+
+<hr />
+<p>一个无序列表</p>
+<ul  type="disc">
+      <li>冯迎港</li>
+      <li>邓宣金</li>
+      <li>吴姸琪</li>
+</ul>
+<ul type="circle">
+      <li>冯迎港</li>
+      <li>邓宣金</li>
+      <li>吴姸琪</li>
+</ul>
+<ultype="square">
+      <li>冯迎港</li>
+      <li>邓宣金</li>
+      <li>吴姸琪</li>
+</ul>
+<p>一个有序列表</p>
+<ol >
+      <li>冯迎港</li>
+      <li>邓宣金</li>
+      <li>吴姸琪</li>
+</ol>
+<p>更改type="A"中的A为其他需要的，即可得到不同的列表</p>
+<ol  type="A">
+      <li>冯迎港</li>
+      <li>邓宣金</li>
+      <li>吴姸琪</li>
+</ol>
+<p>一个从固定数开始的有序列表</p>
+<ol  start="20">
+      <li>冯迎港</li>
+      <li>邓宣金</li>
+      <li>吴姸琪</li>
+</ol>
+<p>嵌套列表</p>
+<ul>
+      <li>冯迎港</li>
+           <ul>
+           <li>学硕</li>
+           <li>河南</li>
+            </ul>
+      </li>
+      <li>邓宣金</li>
+           <ul>
+                 <li>专硕</li>
+                 <li>重庆</li>
+           </ul>
+</ul>
+<hr />
+<h2>一个定义列表：</h2>
+<dl>
+   <dt>计算机</dt>
+   <dd>用来计算的仪器 ... ...</dd>
+   <dt>显示器</dt>
+   <dd>以视觉方式显示信息的装置 ... ...</dd>
+</dl>
+<hr />
+<table  width="200" border="1">
+<tr>
+      <td>标签</td>
+      <td>描述</td>
+</tr>
+<tr>
+     <td >ol</td>
+     <td>定义有序列表</td>
+</tr>
+<tr>
+     <td >ul</td>
+     <td>定义无序列表</td>
+</tr>
+<tr>
+      <td >li</td>
+      <td>定义列表项</td>
+</tr>
+<tr>
+      <td >dl</td>
+      <td>定义定义列表</td>
+</tr>
+<tr>
+     <td >dt</td>
+      <td>定义定义项目</td>
+</tr>
+<tr>
+      <td >dd</td>
+      <td>定义定义的描述</td>
+</tr>
+</table>
+</body>
+</html>
