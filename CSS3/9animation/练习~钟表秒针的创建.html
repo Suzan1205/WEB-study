@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>秒针的创建</title>
+    <style>
+        *{
+         margin: 0;
+         padding: 0;
+        }
+        .sec-wrapper{
+            width: 500px;
+            height: 500px;
+            /* background-color: #bfa; */
+            animation: run 60s;
+        }
+        .sec{
+            height: 250px;
+            width: 4px;
+            background-color: red;
+            margin: 0 auto;
+            /* animation: run 60s; */
+        }
+        @keyframes run {
+            from{
+                transform: rotateZ(0);
+            }
+            to{
+                transform: rotateZ(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 秒针本身没转，转的是秒针外面的容器 -->
+    <div class="sec-wrapper">
+        <div class="sec"></div>
+    </div>
+    
+</body>
+</html>

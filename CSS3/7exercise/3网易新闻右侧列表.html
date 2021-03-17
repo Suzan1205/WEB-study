@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易新闻列表</title>
+    <link rel="stylesheet" href="./reset.css">
+</head>
+<style>
+    body{
+        background-color: #bfa;
+        /* border: 1px solid red; */
+
+    }
+    /* 设置容器的样式 */
+    div{
+        /* 设置宽度 */
+           width: 300px;
+           /* 设置高度 */
+           height: 359px;
+           margin: 50px auto;
+           background-color:yellow;
+           /* 设置上边框 */
+           border-top: 1px solid rgb(177, 172, 172);
+    }
+    /* 设置news-title */
+    .news-title{
+        /* 为了边框和文字一致，需要将h2转换成行内元素 */
+        display:inline-block;
+        /* 设置高度 */
+        height: 30px;
+         /* 设置上边框 */
+        border-top: 1px solid red;
+        /* 上移h2，盖住上边框 */
+        margin-top: -1px;
+        padding-top: 10px;
+    }
+    .news-title a{
+            /* 去除下划线 */
+           text-decoration: none;
+           /* 设置颜色 */
+           color: rgb(25, 24, 26);
+           /* 字体加粗 */
+           font-weight: bold;
+           
+    }
+    /* 设置图片容器的高度 */
+    .news-img{
+        height: 150px;
+    }
+    .news-img .img-title{
+        /* 向上移动文字 */
+        margin-top: -30px;
+        color: ivory;
+        /* 设置加粗 */
+        font-weight: bold;
+        padding-left: 25px;
+    }
+    /* 设置新闻列表 */
+    .news-list{
+        margin-top: -10px;
+        /* 设置左侧padding */
+        padding-left: 14px;
+        /* 设置项目符号 */
+        /* list-style:square; */
+    }
+    .news-list li{
+        margin-bottom: 5px;
+    }
+     /* 设置li中的字体 */
+     .news-list li a{
+        /* 设置字体大小 */
+        font-size: 14px;
+        /* 设置字体颜色 */
+        color: rgb(20, 20, 20);
+        text-decoration: none;
+     }
+     .news-list li a:hover{
+                color: brown;
+     }
+</style>
+<body>
+    <!-- 创建新闻列表的外侧容器 -->
+    <div class="news-wrapper">
+      <a href="">
+        <!-- 创建一个标题标签 -->
+        <h2 class="news-title">
+            <a href="#">军事 航空</a>
+        </h2>
+        <!-- 创建一个图片的容器 -->
+        <div class="news-img">
+            <img src="https://cms-bucket.ws.126.net/2020/0625/f765a8e8j00qcgk70003bc000s600e3c.jpg?imageView&thumbnail=300y150&type=webp" alt="费德勒">
+           <!-- 创建图片标题 -->
+           <h3 class="img-title">
+              俄罗斯胜利日阅兵式规模宏大
+           </h3>
+        </a>
+        </div>
+
+        <!-- 新闻列表 -->
+        <ul class="news-list">
+            <li>
+                <a href="#">空降兵侦查队员全员“合体”作战</a>
+            </li>
+            <li>
+                <a href="#">解放军仪仗方队参加俄罗斯胜利日阅兵</a>
+            </li>
+            <li>
+                <a href="#">探访云南机场公安警犬训练基地</a>
+            </li>
+            <li>
+                <a href="#">中国各界援助乌克兰抗议疫物资运抵基辅</a>
+            </li>
+        </ul>
+
+
+    </div>
+</body>
+</html>

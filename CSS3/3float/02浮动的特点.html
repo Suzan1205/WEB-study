@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动的特点</title>
+</head>
+<style>
+    /* 清楚默认格式 */
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    .box1{
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        /* 
+         浮动元素不会盖住文字，文字会自动环绕在图片周围，我们可以设置文字环绕图片效果
+
+         */
+
+        float: left;
+    }
+    .box2{
+        background-color: red;
+        /* 
+        元素设置浮动以后将会从文档流中脱离，从文档流中脱离后，其元素的特点也会发生变化
+         
+        脱离文档流的一个特点：
+              块元素：
+                  1.块元素不再独占页面的一行
+                  2.脱离文档流后，块元素的宽度和高度默认被内容撑开
+         
+               行内元素：
+                    脱离文档流以后会变成块元素，特点和块元素一样
+         */
+        float: left;
+    }
+    .box3{
+        background-color: green;
+
+        float: left;
+    }
+    .s1{
+        float: left;
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+    }
+
+
+</style>
+<body>
+    <!-- <div class="box1"></div>
+
+<p>
+我的所爱在山腰；想去寻她山太高，低头无法泪沾袍。.爱人赠我百蝶巾；回她什么：猫头鹰。.从此翻脸不理我不知何故兮使我心惊。.我的所爱在闹市；想去寻她人拥挤，仰头无法泪沾耳。.爱人赠我双燕图；回她什么：冰糖葫芦。.从此翻脸不理我，不知何故兮使我糊涂。.我的所爱在河滨；想去寻她河水深，歪头无法泪沾襟。.爱人赠我金表索；回她什么：发汗药。.从此翻脸不理我，不知何故兮使我神经衰弱。.我的所爱在豪室；想去寻她兮没有汽车，摇头无法泪如麻。.
+</p> -->
+
+<span class="s1">我是s1</span>
+
+<!-- <div class="box2">hello</div>
+<div class="box3">hello</div> -->
+    
+</body>
+</html>
