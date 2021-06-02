@@ -1,0 +1,20 @@
+{
+	"vue component file": {
+    "prefix": "vue",
+    "body": [
+      "<template>",
+      "<div> \n",
+      "</div>",
+      "</template> \n",
+      "<script type=\"text/ecmascript-6\">",
+      "export default {",
+      "}",
+      "</script> \n",
+      "<style scoped> \n",
+      " ",
+      "</style>",
+      "$2",
+    ],
+    "description": "vue 组件文件"
+  }
+}
