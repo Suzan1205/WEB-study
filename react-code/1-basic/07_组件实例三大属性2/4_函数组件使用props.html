@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>props的简写方式</title>
+</head>
+<body>
+<div id="test"></div>
+
+  <!-- 引入react核心库 -->
+	<script type="text/javascript" src="../js/react.development.js"></script> 
+	<!-- 引入react-dom，用于支持react操作DOM -->
+	<script type="text/javascript" src="../js/react-dom.development.js"></script>
+	<!-- 引入babel，用于将jsx转为js -->
+	<script type="text/javascript" src="../js/babel.min.js"></script>
+  <!-- 引入prop-types，用于对组件标签属性进行限制 -->
+  <script type="text/javascript" src="../js/prop-types.js"></script>
+
+  <script type="text/babel">
+  
+// 创建组件
+    function Person (props){
+      const {name,age,gender} = props
+      return (
+          <ul>
+            <li>姓名：{name}</li>
+            <li>性别：{gender}</li>
+            <li>年龄：{age}</li>
+          </ul>
+        )
+      }
+// 函数式组件只能使用props，标签的限定只能放在函数外面，因为函数没有static属性
+
+      // 标签属性进行类型、必要性限定
+    Person.propTypes = {
+        name:PropTypes.string.isRequired,
+        gender:PropTypes.string,
+        age:PropTypes.number,
+        speak:PropTypes.func,
+    }
+    // 指定默认标签属性值
+    Person.defaultProps = {
+      gender: '不男不女',
+      age:18
+    }
+    
+// 渲染组件到页面
+ReactDOM.render(<Person name="jj" gender="女" age={18} />,document.getElementById('test'))
+  </script>
+</body>
+</html>
